@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedometer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="rpm">
+        <p>RPM:&nbsp</p>
+        <p>0</p>
+    </div>
+    <div class="speedometer">
+        <p>Speed:&nbsp</p>
+        <p style="font-size: 60px;">0</p>
+    </div>
+    <div class="gear">
+        <p>Gear:&nbsp</p>
+        <p class="num">N</p>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <div class="meter">
+            <img src="images/Scale.png" width="400px" class="scale">
+            <img src="images/Gauge.png" width="150px" class="gauge">
+        </div>
+
+        <div class="tachometer">
+            <img src="images/Tachometer Scale.png" width="400px" class="tachometerscale">
+            <img src="images/Tachometer Gauge.png" width="150px" class="tachometergauge">
+        </div>
+    </div>
+    <div class="instruction" style="position: absolute; bottom: 1px; left: 5px;">
+        <p>Accelerate: ⬆️ | Brake: ⬇️ | Gear Up: L Shift | Gear Down: L Ctrl</p>
+    </div>
+    <audio id="1st" src="audio/1st.m4a" preload="auto"></audio>
+    <audio id="2nd" src="audio/2nd.m4a" preload="auto"></audio>
+    <audio id="3rd" src="audio/3rd.m4a" preload="auto"></audio>
+    <audio id="4th" src="audio/4th.m4a" preload="auto"></audio>
+    <audio id="brake" src="audio/brake.m4a" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
